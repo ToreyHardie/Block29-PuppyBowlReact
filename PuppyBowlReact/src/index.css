@@ -1,17 +1,57 @@
-:root { /*Keep - can control the background color*/
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: black;
-  background-color: white;
-  text-align: center;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
+body{
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(/images/Football.png);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: black;
 }
 
+
+.container{
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.player-card {
+background-color: white;
+width: 200px;
+height: 100%;
+margin: 10px;
+padding: 10px;
+border: 2px solid black;
+text-align: center;
+border-radius: 10px;
+}
+
+.player-image {
+border: 2px solid black;
+max-width: 90%;
+height: auto;
+margin-bottom: 15px;
+border-radius: 10px;
+
+}
+
+.Title{
+text-align: center;
+padding: 10px;
+font-size: 20px;
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-shadow: black;
+}
+
+#new-player-form{
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+}
